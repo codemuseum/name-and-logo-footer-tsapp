@@ -1,10 +1,11 @@
 
 * html .app-name-and-logo-footer .layout-left .iefix {  height:100px; display: inline-block; vertical-align: middle; }
+.app-name-and-logo-footer {text-align:center;}
 .app-name-and-logo-footer a img {border:0;}
 .app-name-and-logo-footer .layout-left .logo { height: 100px; line-height: 100px; }
 .app-name-and-logo-footer .layout-left .logo img { vertical-align:middle; }
-.app-name-and-logo-footer { padding: 10px; font-size: 80%; }
-.app-name-and-logo-footer a { display: table; text-decoration: none; }
+.app-name-and-logo-footer { padding: 10px; font-size: 100%; }
+.app-name-and-logo-footer a.home-link { display: table; text-decoration: none;margin-left:auto;margin-right:auto; }
 
 *:first-child+html .app-name-and-logo-footer a { display: inline-block; }
 * html .app-name-and-logo-footer a { display: inline-block; }
@@ -13,7 +14,7 @@
 .app-name-and-logo-footer a .titles { cursor: pointer;}
 .app-name-and-logo-footer .layout-hidden .titles { display: none; }
 .app-name-and-logo-footer .layout-no-img .titles {padding-left:15px;padding-bottom:25px;} /* padding for logos without an image */
-.app-name-and-logo-footer .titles div.title { font-size: 210%; }
-.app-name-and-logo-footer .titles div.subtitle { font-size: 170%; }
+.app-name-and-logo-footer .titles div.title { font-size: 150%; }
+.app-name-and-logo-footer .titles div.subtitle { font-size: 110%; }
 
 .app-name-and-logo-footer .clearfix {clear: both; visibility: hidden; font-size: 1px; line-height: 1px;}

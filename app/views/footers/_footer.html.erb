@@ -14,5 +14,5 @@
 </div>
 
 <div class="contact">
-  <%=h footer.phone %> &bull; <%=link_to h(footer.url), '/' %>
+  <%=h footer.phone %> <%= '&bull;' if !footer.phone.blank? && !footer.url.blank? %> <%=link_to h(footer.url), '/' %>
 </div>

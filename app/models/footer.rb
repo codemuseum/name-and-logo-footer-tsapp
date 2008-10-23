@@ -23,6 +23,8 @@ class Footer < ActiveRecord::Base
   def after_initialize
     if new_record?
       self.layout = 'left'
+      self.phone = 'Main Phone Number'
+      self.url = 'www.mysite.com'
     end
   end
   

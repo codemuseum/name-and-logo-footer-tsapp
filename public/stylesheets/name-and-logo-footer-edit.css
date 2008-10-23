@@ -4,3 +4,5 @@
 .app-name-and-logo-footer a.ts-assets-selector-change-link {line-height:1em;}
 .app-name-and-logo-footer .format-link {text-align:right;}
 .app-name-and-logo-footer .format-link a {display:inline; cursor:pointer;}
+
+.app-name-and-logo-footer div.home-link { display: table; text-decoration: none;margin-left:auto;margin-right:auto; }
