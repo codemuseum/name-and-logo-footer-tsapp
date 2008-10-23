@@ -1,0 +1,18 @@
+<div class="layout-<%=h footer.layout %><%= footer.picture? ? '' : ' layout-no-img' %>">
+  <a class="home-link" href="/" title="Go to the home page">
+    <% if footer.picture? %>
+    <div class="logo">
+      <span class="iefix"></span><%= image_tag footer.picture_url %><span class="iefix"></span> &nbsp;
+    </div>
+    <% end %>
+    <div class="titles">
+      <div class="title"><%=h footer.title %></div>
+      <div class="subtitle"><%=h footer.subtitle %></div>
+    </div>
+    <div class="clearfix">&nbsp;</div>
+  </a>
+</div>
+
+<div class="contact">
+  <%=h footer.phone %> &bull; <%=link_to h(footer.url), '/' %>
+</div>

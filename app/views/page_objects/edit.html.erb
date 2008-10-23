@@ -1,0 +1,8 @@
+<% stylesheets 'name-and-logo-footer', 'name-and-logo-footer-edit' %>
+<% javascripts 'prototype', 'effects', 'dragdrop', 'assets', 'name-and-logo-footer-edit' %>
+
+<% fields_for_page_object do |f| %>
+  <% fields_for "#{f.object_name}[assigned_footer]", @page_object.footer do |nf| -%>
+    <%= render :partial => 'footers/embedded_fields', :locals => {:f => nf} %>
+  <% end -%>
+<% end %>

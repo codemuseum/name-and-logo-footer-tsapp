@@ -1,0 +1,22 @@
+<%# Takes f -%>
+<% footer = f.object %>
+<div class="layout-<%=h footer.layout %> layout-spec">
+  <div class="home-link">
+    <div class="logo">
+      <%= asset_urn_fields(f, [:pictures]) %>
+    </div>
+    <div class="titles">
+      <div class="title"><%= f.text_field :title %></div>
+      <div class="subtitle"><%= f.text_field :subtitle %></div>
+    </div>  
+    <div class="format-link">
+      <%= f.hidden_field :layout, :class => 'layout' %>
+      <a><%=h footer.layout_hidden? ? 'Show Title Text' : 'Hide Title Text' %></a>
+    </div>
+    <div class="clearfix">&nbsp;</div>
+  </div>
+</div>
+
+<div class="contact">
+  <%= f.text_field :phone %> &bull; <%= f.text_field :url %>
+</div>
