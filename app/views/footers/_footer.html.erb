@@ -2,7 +2,7 @@
   <a class="home-link" href="/" title="Go to the home page">
     <% if footer.picture? %>
     <div class="logo">
-      <span class="iefix"></span><%= image_tag footer.picture_url %><span class="iefix"></span> &nbsp;
+      <span class="iefix"></span><img src="<%= footer.picture_url %>" /><span class="iefix"></span> &nbsp;
     </div>
     <% end %>
     <div class="titles">

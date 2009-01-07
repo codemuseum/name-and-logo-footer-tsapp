@@ -17,7 +17,7 @@ class Footer < ActiveRecord::Base
   end
   
   def picture_url
-    @picture_url ||= "#{ThriveSmart::Constants.ts_platform_host}/#{asset_type.downcase.pluralize}/#{asset_urn}.img"
+    @picture_url ||= "/#{asset_type.downcase.pluralize}/#{asset_urn}.img"
   end
   
   def after_initialize
